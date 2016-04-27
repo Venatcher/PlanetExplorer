@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{FB56AC0F-1C4A-235C-36CA-8DEBE18AD368}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AccidentalNoise\Cache.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\CellularCache.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\CellularGenerator.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Enums\BasisType.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Enums\CombinerType.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Enums\FractalType.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Enums\InterpolationType.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Enums\MappingMode.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitAutoCorrect.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitBasisFunction.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitBias.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitBlend.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitBrightContrast.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitCache.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitCeiling.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitCellular.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitClamp.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitCombiner.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitConstant.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitCos.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitFloor.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitFractal.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitGain.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitGradient.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitInvert.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitLog.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitModuleBase.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitPow.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitRotateDomain.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitScaleDomain.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitScaleOffset.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitSelect.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitSin.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitSphere.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitTan.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitTiers.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Implicit\ImplicitTranslatedDomain.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Mapping.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\MappingRanges.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\Noise.cs" />
+     <Compile Include="Assets\Scripts\AccidentalNoise\NoiseLookupTable.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\Generator.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\MapData.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\MathHelper.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\River.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\TextureGenerator.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\Tile.cs" />
+     <Compile Include="Assets\Scripts\CodeFromTuto\TileGroup.cs" />
+     <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\WorldGeneration\MapData.cs" />
+     <Compile Include="Assets\Scripts\WorldGeneration\Tile.cs" />
+     <Compile Include="Assets\Scripts\WorldGeneration\WorldGenerator.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
